@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+/*Base Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color:white; 
+    overflow-x: hidden;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 6.5rem;
+    background: rgba(224, 112, 20, 0.568);
+    z-index: 100000;
+}
+
+.background {
+    background: url('images/kentebackground2.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+.nav h2 {
+    color: #5292c7;
+    font-size: 1.7rem;
+}
+
+#item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#item li {
+    list-style: none;
+    padding-right: 50px;
+    text-transform: uppercase;
+}
+
+#item li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.logo {
+    width: 13rem;
+}
+
+#item li a:hover, #item .media-icons i:hover {
+    color: #0a86ec;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#item .media-icons i {
+    font-size: 1.5rem;
+    margin-right: 40px;
+}
+
+#bar {
+    color: white;
+    font-weight: lighter;
+    font-size: 2.4rem;
+    display: none;
+}
+
+.background .overlap {
+    background: #31323300;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.welcometext {
+    position: absolute;
+    top: 40%;
+    left: 13.75%;
+    right: 13.75%;
+    text-align: center;
+    transform: translate (-50%, -50%);
+}
+
+.welcometext p {
+    font-size: 1.3rem;
+    color: #6d7575
+}
+
+.welcometext h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.welcometext .welcome-button {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.welcometext .welcome-button a {
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.welcometext .welcome-button a.transparent-button {
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+}
+
+.welcometext .welcome-button a.border-button {
+    color: #0a86ec;
+    font-weight: 500;
+    border: 1px solid #0a86ec;
+    padding: 0.9rem 1.6rem;
+    border-radius: 7px;
+}
+
+.welcometext .welcome-button a.border-button:hover {
+    background: #f3f2f2b6;
+    border: 1px solid whitesmoke;
+}
+
+.welcometext .welcome-button a.transparent-button:hover {
+    color: #0a86ec;
+}
+
+.business-details {
+    background: #171819;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+}
+
+.business-details .leftside {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.business-details .leftside h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+
+.business-details .leftside h6 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 1.2rem;
+}
+
+.business-details .leftside p {
+    color: #666262;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+
+
+.business-details .leftside a {
+    background: #0a86ec;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #0a86ec;
+    border-radius: 5px;
+}
+
+.business-details .leftside a:hover {
+  background: #fff;
+  color:#0a86ec;
+}
+
+
+.business-details .rightside {
+    width: 45%;
+    margin-bottom: 100px;
+    border-left: 1px solid #666262;
+    padding-left: 4rem;
+}
+
+.business-details .rightside h3 {
+    font-size: 2.5rem;
+}
+
+.business-details .rightside h5 {
+    font-size: 1.1rem;
+}
+
+.business-details .rightside p {
+    font-size: 1.1rem;
+    color: #666262;
+    margin-bottom: 0.8rem;
+}
+
+.staffpage {
+    background: #f9f9f9;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.staffpage .staffinfo {
+    width: 39%;
+}
+
+.staffpage .staffinfo h2 {
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.1rem;
+    text-align: center;
+}
+
+.staffpage .staffinfo p {
+   color: #7f8c8d;
+   font-size: 1.1rem;
+   padding-bottom: 1.1rem;
+}
+
+
+.staffpage .staffpics {
+    width: 57%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    overflow-x:visible;
+}
+
+.staffpage .staffpics .team1 {
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow:
+  0 0px 1.2px rgba(0, 0, 0, 0.038),
+  0 0px 2.7px rgba(0, 0, 0, 0.056),
+  0 0px 4.6px rgba(0, 0, 0, 0.069),
+  0 0px 6.9px rgba(0, 0, 0, 0.08),
+  0 0px 10px rgba(0, 0, 0, 0.09),
+  0 0px 14.2px rgba(0, 0, 0, 0.1),
+  0 0px 20.1px rgba(0, 0, 0, 0.111),
+  0 0px 29.2px rgba(0, 0, 0, 0.124),
+  0 0px 45px rgba(0, 0, 0, 0.142),
+  0 0px 80px rgba(0, 0, 0, 0.18);
+}
+
+.staffpage .staffpics .team1 .portrait img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.staffpage .staffpics .team1 .teamdetails h4 {
+    color: #212529;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.staffpage .staffpics .team1 .teamdetails p {
+    color: #212529;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+}
+
+.footer {
+    border-top: 1px solid #ecf0f1;
+    padding: 3rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p {
+    color: #7f8c8d;
+    justify-content: flex-start;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1180px) {
+    .background {
+        background-position: center;
+    }
+    
+    .nav {
+        padding: 0.5rem 4.5rem;
+    }
+    
+    .background {
+        background: url('images/backgroundpic.jpg');
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        z-index: -1;
+    }
+    
+    .nav h2 {
+        font-size: 1.4rem;
+    }
+  
+    #item li {
+        padding-right: 30px;
+    }
+    
+    #item li a {
+        font-size: 0.9rem;
+    }
+    
+    .logo {
+        width: 11rem;
+    }
+    
+    
+    #item .media-icons i {
+        margin-right: 20px;
+        font-size: 1.1rem;
+    }
+
+    .business-details {
+        padding: 6rem 7rem;
+        }
+    
+}
+
+@media screen and (max-width: 1038px) {
+    .background {
+        background-position: center;
+    }
+    
+    .business-details {
+        padding: 6rem 7rem;
+        }
+        
+        .business-details .leftside {
+            width: 50%;
+        }
+        
+        .business-details .leftside h3 {
+            font-size: 1.8rem;
+            padding-bottom: 0.8rem;
+        }
+        
+        .business-details .leftside h6 {
+            font-size: 1.3rem;
+            padding-bottom: 1.2rem;
+        }
+        
+        .business-details .leftside p {
+            font-size: 1rem;
+            padding-bottom: 2.2rem;
+        }
+        
+        .business-details .leftside a {
+            font-size:0.9rem;
+        }
+        
+        .business-details .rightside {
+            padding-left: 3.5rem;
+        }
+        
+        .business-details .rightside h3 {
+            font-size: 2rem;
+        }
+        
+        .business-details .rightside h5 {
+            font-size: 1rem;
+        }
+        
+        .business-details .rightside p {
+            font-size: 1rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .staffpage {
+            padding: 6rem 7rem;
+        }
+        
+        .staffpage .staffinfo h2 {
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
+        
+        .staffpage .staffinfo p {
+           font-size: 1rem;
+        }
+        
+        .staffpage .staffpics .team1 {
+            width: 48%;
+        }
+        
+        .staffpage .staffpics .team1 .teamdetails h4 {
+            color: #212529;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        
+        .staffpage .staffpics .team1 .teamdetails p {
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            padding: 3rem 4rem;
+        }
+        .footer p {
+            font-size: 0.9rem;
+        }
+        
+}
+
+@media screen and (max-width: 970px) {
+    .background {
+        background-position: center;
+    }
+   
+    .nav {
+        padding: 0.5rem 3rem;
+    }
+    
+    .nav h2 {
+        color: #5292c7;
+        font-size: 1.7rem;
+    }
+    
+    #item {
+        flex-direction: column;
+        text-align:center;
+        width: 255px;
+        height: 420px;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #000000cc;
+        z-index: 100000;
+        margin-top: 5rem;
+        transition: 0.5s;
+    }
+    
+    #item li {
+        padding-right: 0;
+        padding: 25px 0;
+    }
+    
+    #item li a {
+        font-size: 1.3rem;
+    }
+    
+    .logo {
+        width: 13rem;
+    }
+    
+    #item .media-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #item .media-icons i {
+        font-size: 1.5rem;
+        margin-right: 2rem;
+        padding-top: 20px;
+    }
+    
+    #bar {
+        display: initial;
+        cursor: pointer;
+    }
+
+    .welcometext p {
+        font-size: 1.1rem;
+    }
+    
+    .welcometext h2 {
+        font-size: 2.2rem;
+    }
+    
+    .welcometext .welcome-button {
+        margin-top: 1.5rem;
+    
+    }
+    
+    .welcometext .welcome-button a {
+        font-size: 0.9rem;        
+    }
+    
+    .welcometext .welcome-button a.transparent-button {
+        padding: 0.7rem 1.4rem;
+    }
+    
+    .welcometext .welcome-button a.border-button {
+        padding: 0.7rem 1.4rem;
+    }
+    
+    .welcometext .welcome-button a.transparent-button:hover {
+        color: #0a86ec;
+    }
+
+    .staffpage {
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .staffpage .staffinfo {
+        width: 70%;
+        margin-bottom: 1.7rem;
+    }
+    
+    .staffpage .staffpics {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .footer {
+        padding: 1rem 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 1px auto;
+    }
+    .footer p {
+        padding-bottom: 0.5rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .background {
+        background-position: center;
+    }
+    
+    .nav h2 {
+        color: #5292c7;
+        font-size: 1.5rem;
+    }
+    
+
+    .welcometext p {
+        font-size: 1rem;
+    }
+    
+    .welcometext h2 {
+        font-size: 2.1rem;
+    }
+    
+    .welcometext .welcome-button {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .business-details {
+        padding: 5rem, 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        .business-details .leftside {
+            width: 70%;
+        }
+        
+        .business-details .leftside a {
+            font-size:1rem;
+        }
+        
+        .business-details .rightside {
+            padding-left: 0;
+            border-left: 0;
+            border-top: 1px solid #666262;
+            width: 70%;
+            margin-top: 1.7rem;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        
+        .business-details .rightside h3, h5, p {
+            text-align: center;
+        }
+
+        .business-details .rightside h3 {
+
+            padding-top: 1.7rem;
+        }
+}
+
+@media screen and (max-width: 607px) {
+
+    .welcometext h2 {
+        font-size: 1.8rem;
+    }
+    
+    .welcometext .welcome-button {
+        margin-top: 0.7rem;
+    
+    }
+    
+    .business-details  {
+        padding: 3rem 4.2rem;
+    }
+    
+    .business-details .leftside {
+        width: 100%;
+    }
+
+    .business-details .rightside {
+        width: 100%;
+    }
+    
+    .business-details .rightside h3, h5, p {
+        text-align: center;
+    }
+
+    .business-details .rightside h3 {
+
+        padding-top: 1.7rem;
+    }
+
+
+}
+
+@media screen and (max-width: 380px) {
+    .nav {
+    padding: 0.5rem 1.8rem;
+    }
+
+    .logo {
+        width: 10.5rem;
+    }  
+
+    #item {
+        width: 275px;
+        height: 420px;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 10000;
+        margin-top: 4.2rem;
+        transition: 0.5s
+    }
+
+    .welcometext h2 {
+        font-size: 1.4rem;
+    }
+
+    .business-details  {
+        padding: 3rem 3rem;
+    }
+
+    .business-details .leftside h3 {
+        font-size: 1.5rem;
+    }
+
+    .business-details .leftside h6 {
+        font-size: 1rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .staffpage {
+        padding: 4.5rem 1.5rem;
+    }
+
+    .staffpage .staffinfo {
+        width: 90%;
+    }
+    .staffpage .staffinfo h2 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .staffpage .staffinfo p {
+        font-size: 0.9rem;
+    }
+
+    .staffpage .staffpics .team1 .teamdetails h4 {
+        font-size: 0.9rem;
+    }
+    
+    .staffpage .staffpics .team1 .teamdetails p {
+        font-size: 0.7rem;
+    }
+
+    .footer {
+        width: 100%;
+    }
+    
+    .footer p {
+        font-size: 0.7rem;
+    }
+}
